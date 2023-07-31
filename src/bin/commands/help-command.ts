@@ -9,7 +9,7 @@ export default class HelpCommand extends Command {
 
   public execute(args: string[] = []) {
     for (const command of CommandManager.Commands.values()) {
-      console.log(command.toString());
+      console.log(`${command.toString()}`);
     }
   }
 }

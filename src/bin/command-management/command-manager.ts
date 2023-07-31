@@ -14,6 +14,7 @@ export default class CommandManager {
     if (targetedCommand == undefined) {
       (CommandManager.getCommand('help') as HelpCommand).execute();
     } else {
+      args.shift();
       targetedCommand.execute(args);
     }
   }
