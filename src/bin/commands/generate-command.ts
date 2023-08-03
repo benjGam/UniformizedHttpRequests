@@ -11,6 +11,4 @@ export default class GenerateCommand extends Command {
       return;
     }
   }
-
-  private generateClass() {}
 }
